@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attack map drawing</title>
+    <meta name="keywords" content="d3.js,html5,javascript">
+    <meta name="description" content="">
+    <link rel="icon" href="favcion.ico" sizes="32x32" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/leaflet.css" />
+    <link rel="stylesheet" href="./css/connect.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500i,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+</head>
+
+<body>
+    
+   
+    <div id="title">
+        <div id="ttt">Vietnam Cyber Attack Map</div>
+        <hr>
+        <div id="gov">mic.gov.vn</div>
+
+    </div>
+
+    <!-- Show Statisticts Info -->
+    <div id="Statisticts">
+        <div class="container">
+        
+            <h1 id="logo">LOGO HERE</h1>
+            
+            <div id="date-time">
+                <div id="date">
+                    <span class="pull-left">
+                        1/12/2017
+                    </span>
+                    <span class="pull-right">                    
+                    </span>
+                </div>
+                <div id="time">
+                    <span id="hh">07</span><span class="fade">:</span><span id="mm">59</span><span class="fade">:</span><span id="ss">00</span><span class="fade">:</span><span id="ms">001</span>
+                </div>
+            </div>
+            <div class="text-panel">
+                <div class="row">
+                    <div class="col-6 text-left">Mối đe dọa</div>
+                    <div class="col-6 text-left">123456</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-left">DAS</div>
+                    <div class="col-6 text-left">2390651</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-left">ODS</div>
+                    <div class="col-6 text-left">2857142</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-left">VUL</div>
+                    <div class="col-6 text-left">51671</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-left">WAY</div>
+                    <div class="col-6 text-left">526778</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-left">KAS</div>
+                    <div class="col-6 text-left">24860172</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-left">BAD</div>
+                    <div class="col-6 text-left">676</div>
+                </div>
+            </div>
+            <div id="spinny-world">
+                <div class="pull-left col-4">
+                    <div class="target-sign"></div>
+                </div>
+                <div class="pull-right col-8">
+                    <h2>Attacker</h2>
+                    <h5>TOP COUNTRIES</h4>
+                    <h6>[past 30 days]</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Map Content -->
+    <div id="mapid"></div>
+    <!-- Live attack content -->
+    <div id="live_attacked">
+        <table class="table">
+            <thead id="col-header">
+                <th colspan="7" height="20">
+                    <h2>Live attack</h2>
+                </th>
+            </thead>
+            <thead id="col-title">
+                <th>Timestamp</th>
+                <th>Attacker</th>
+                <th>Attacker IP</th>
+                <th>Attacker CGO</th>
+                <th>Attacker GEO</th>
+                <th>Attacker Type</th>
+                <th>Port</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="fix-bottom">
+            <div class="col-6">
+                <span class="pull-left">
+                    &copy 2017 Your company name
+                </span>
+            </div>
+            <div class="col-6">
+                <span class="circle-icon pull-right">
+                    <i class="fa fa-lg fa-facebook"></i>
+                    <i class="fa fa-lg fa-twitter"></i>
+                    <i class="fa fa-lg fa-google"></i>
+                    <i class="fa fa-lg fa-linkedin-square"></i>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <div id="grid"></div>
+    <!-- Include script -->
+    <script src="./js/d3.min.js" charset="utf-8"></script>
+    <script src="./js/topojson.js" charset="utf-8"></script>
+    <script src="./js/jquery.js" charset="utf-8"></script>
+    <script src="./js/leaflet.js" charset="utf-8"></script>
+    <script src="./js/victor.min.js" charset="utf-8"></script>
+    <script src="./js/connect.data.js" charset="utf-8"></script>
+    <script src="./js/connect.min.js" charset="utf-8"></script>
+    <script src="./js/draw_connect.min.js" charset="utf-8"></script>
+    <script src="./js/draw_spinny_world.js" charset="utf-8"></script>
+   
+</body>
+
+</html>
